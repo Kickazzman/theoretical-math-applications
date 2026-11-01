@@ -1,0 +1,211 @@
+{
+  "n_rows": 180,
+  "gt_mismatch_flags": 0,
+  "hammer_correct_field_mismatches": 0,
+  "contract_ok_vs_answered_mismatches": 0,
+  "overall_answered": {
+    "k": 73,
+    "n": 129,
+    "rate": 0.5659,
+    "wilson95": [
+      0.4797,
+      0.6483
+    ]
+  },
+  "confidence_distribution_answered": {
+    "1.0": 129
+  },
+  "by_confidence": {
+    "1.0": {
+      "rows": 129,
+      "answered": {
+        "k": 73,
+        "n": 129,
+        "rate": 0.5659,
+        "wilson95": [
+          0.4797,
+          0.6483
+        ]
+      }
+    }
+  },
+  "by_type_answered": {
+    "a": {
+      "rows": 39,
+      "answered": {
+        "k": 22,
+        "n": 39,
+        "rate": 0.5641,
+        "wilson95": [
+          0.4098,
+          0.707
+        ]
+      }
+    },
+    "b": {
+      "rows": 90,
+      "answered": {
+        "k": 51,
+        "n": 90,
+        "rate": 0.5667,
+        "wilson95": [
+          0.4636,
+          0.6642
+        ]
+      }
+    }
+  },
+  "by_source_answered": {
+    "hard": {
+      "rows": 25,
+      "answered": {
+        "k": 13,
+        "n": 25,
+        "rate": 0.52,
+        "wilson95": [
+          0.335,
+          0.6997
+        ]
+      }
+    },
+    "lag": {
+      "rows": 72,
+      "answered": {
+        "k": 41,
+        "n": 72,
+        "rate": 0.5694,
+        "wilson95": [
+          0.4544,
+          0.6774
+        ]
+      }
+    },
+    "orig": {
+      "rows": 32,
+      "answered": {
+        "k": 19,
+        "n": 32,
+        "rate": 0.5938,
+        "wilson95": [
+          0.4226,
+          0.7448
+        ]
+      }
+    }
+  },
+  "by_contract_class": {
+    "bare_word": {
+      "rows": 51,
+      "answered": {
+        "k": 0,
+        "n": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      }
+    },
+    "parseable_fenced": {
+      "rows": 129,
+      "answered": {
+        "k": 73,
+        "n": 129,
+        "rate": 0.5659,
+        "wilson95": [
+          0.4797,
+          0.6483
+        ]
+      }
+    }
+  },
+  "bare_word_leaning": {
+    "rows": 51,
+    "leaning_extracted": 51,
+    "leaning_correct": {
+      "k": 23,
+      "n": 51,
+      "rate": 0.451,
+      "wilson95": [
+        0.3227,
+        0.5862
+      ]
+    }
+  },
+  "by_decision_value_a": {
+    "pass": {
+      "rows": 39,
+      "answered": {
+        "k": 22,
+        "n": 39,
+        "rate": 0.5641,
+        "wilson95": [
+          0.4098,
+          0.707
+        ]
+      }
+    }
+  },
+  "by_decision_value_b": {
+    "A": {
+      "rows": 80,
+      "answered": {
+        "k": 42,
+        "n": 80,
+        "rate": 0.525,
+        "wilson95": [
+          0.417,
+          0.6308
+        ]
+      }
+    },
+    "B": {
+      "rows": 10,
+      "answered": {
+        "k": 9,
+        "n": 10,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958,
+          0.9821
+        ]
+      }
+    }
+  },
+  "by_agreement": {
+    "agree": {
+      "rows": 52,
+      "answered": {
+        "k": 52,
+        "n": 52,
+        "rate": 1.0,
+        "wilson95": [
+          0.9312,
+          1.0
+        ]
+      }
+    },
+    "disagree": {
+      "rows": 41,
+      "answered": {
+        "k": 0,
+        "n": 41,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.0857
+        ]
+      }
+    }
+  },
+  "disagreements": {
+    "n": 41,
+    "hammer_correct": 0,
+    "fast_correct": 41
+  },
+  "agreements": {
+    "n": 52,
+    "hammer_correct": 52,
+    "fast_correct": 52
+  }
+}

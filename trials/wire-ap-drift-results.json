@@ -1,0 +1,91 @@
+{
+  "file": "/home/joshua/llm/wire-experiment/runs/bit-shared/20261007T000000Z.jsonl",
+  "seq": "b",
+  "tick_first": 2441528,
+  "tick_last": 2491527,
+  "window": 50000,
+  "segments": 10,
+  "segment_length": 5000,
+  "density_overall": 0.72482,
+  "density_min": 0.6038,
+  "density_max": 0.7698,
+  "density_range": 0.16600000000000004,
+  "segments_detail": [
+    {
+      "segment": 0,
+      "tick_first": 2441528,
+      "tick_last": 2446527,
+      "density": 0.6038,
+      "aps_within": 1364416
+    },
+    {
+      "segment": 1,
+      "tick_first": 2446528,
+      "tick_last": 2451527,
+      "density": 0.6046,
+      "aps_within": 1375608
+    },
+    {
+      "segment": 2,
+      "tick_first": 2451528,
+      "tick_last": 2456527,
+      "density": 0.736,
+      "aps_within": 2545676
+    },
+    {
+      "segment": 3,
+      "tick_first": 2456528,
+      "tick_last": 2461527,
+      "density": 0.7416,
+      "aps_within": 2535046
+    },
+    {
+      "segment": 4,
+      "tick_first": 2461528,
+      "tick_last": 2466527,
+      "density": 0.7618,
+      "aps_within": 2752541
+    },
+    {
+      "segment": 5,
+      "tick_first": 2466528,
+      "tick_last": 2471527,
+      "density": 0.7448,
+      "aps_within": 2588027
+    },
+    {
+      "segment": 6,
+      "tick_first": 2471528,
+      "tick_last": 2476527,
+      "density": 0.765,
+      "aps_within": 2804730
+    },
+    {
+      "segment": 7,
+      "tick_first": 2476528,
+      "tick_last": 2481527,
+      "density": 0.7698,
+      "aps_within": 2818375
+    },
+    {
+      "segment": 8,
+      "tick_first": 2481528,
+      "tick_last": 2486527,
+      "density": 0.7632,
+      "aps_within": 2813462
+    },
+    {
+      "segment": 9,
+      "tick_first": 2486528,
+      "tick_last": 2491527,
+      "density": 0.7576,
+      "aps_within": 2717771
+    }
+  ],
+  "aps_full_window": 244959744,
+  "aps_within_sum": 24315652,
+  "aps_cross_segment": 220644092,
+  "cross_share": 0.900736130749712,
+  "identity_holds": true,
+  "method": "fft"
+}

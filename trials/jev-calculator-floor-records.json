@@ -1,0 +1,1651 @@
+[
+ {
+  "decision_id": "cf-a01",
+  "type": "a",
+  "function": "second_largest",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "duplicates",
+   "dup-max",
+   "all-same"
+  ],
+  "failed_details": [
+   "got 5 expected 3",
+   "got 9 expected 7",
+   "returned 4 (expected raise ValueError)"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a02",
+  "type": "a",
+  "function": "second_largest",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b01",
+  "type": "b",
+  "function": "second_largest",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "duplicates",
+   "dup-max",
+   "all-same"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b02",
+  "type": "b",
+  "function": "second_largest",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "duplicates",
+   "two",
+   "dup-max",
+   "mixed"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a03",
+  "type": "a",
+  "function": "count_words",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "messy-spaces",
+   "empty",
+   "spaces-only",
+   "tabs-newlines"
+  ],
+  "failed_details": [
+   "got 8 expected 2",
+   "got 1 expected 0",
+   "got 4 expected 0",
+   "got 1 expected 3"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a04",
+  "type": "a",
+  "function": "count_words",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b03",
+  "type": "b",
+  "function": "count_words",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "messy-spaces",
+   "empty",
+   "spaces-only",
+   "tabs-newlines"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b04",
+  "type": "b",
+  "function": "count_words",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "messy-spaces",
+   "spaces-only",
+   "tabs-newlines"
+  ],
+  "construction": "correct at position B, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a05",
+  "type": "a",
+  "function": "is_anagram",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "case",
+   "phrase"
+  ],
+  "failed_details": [
+   "got False expected True",
+   "got False expected True"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a06",
+  "type": "a",
+  "function": "is_anagram",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b05",
+  "type": "b",
+  "function": "is_anagram",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "case",
+   "phrase"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b06",
+  "type": "b",
+  "function": "is_anagram",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "spaces",
+   "phrase"
+  ],
+  "construction": "correct at position B, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a07",
+  "type": "a",
+  "function": "fibonacci_n",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "f0",
+   "f2",
+   "f3",
+   "f4",
+   "f5",
+   "f10",
+   "f15"
+  ],
+  "failed_details": [
+   "got 1 expected 0",
+   "got 2 expected 1",
+   "got 3 expected 2",
+   "got 5 expected 3",
+   "got 8 expected 5",
+   "got 89 expected 55",
+   "got 987 expected 610"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a08",
+  "type": "a",
+  "function": "fibonacci_n",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b07",
+  "type": "b",
+  "function": "fibonacci_n",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "f0",
+   "f2",
+   "f3",
+   "f4",
+   "f5",
+   "f10",
+   "f15"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b08",
+  "type": "b",
+  "function": "fibonacci_n",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "f0",
+   "f2",
+   "f3",
+   "f4",
+   "f5",
+   "f10",
+   "f15"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a09",
+  "type": "a",
+  "function": "reverse_words",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "messy"
+  ],
+  "failed_details": [
+   "got '  world   hello  ' expected 'world hello'"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a10",
+  "type": "a",
+  "function": "reverse_words",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b09",
+  "type": "b",
+  "function": "reverse_words",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "messy"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b10",
+  "type": "b",
+  "function": "reverse_words",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "two",
+   "messy",
+   "one",
+   "three",
+   "punct"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a11",
+  "type": "a",
+  "function": "discount_price",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "rounding1",
+   "rounding2",
+   "rounding3"
+  ],
+  "failed_details": [
+   "got 16.9915 expected 16.99",
+   "got 6.6933 expected 6.69",
+   "got 43.706250000000004 expected 43.71"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a12",
+  "type": "a",
+  "function": "discount_price",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b11",
+  "type": "b",
+  "function": "discount_price",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "rounding1",
+   "rounding2",
+   "rounding3"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b12",
+  "type": "b",
+  "function": "discount_price",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "basic",
+   "rounding1",
+   "rounding2",
+   "rounding3",
+   "zero-pct",
+   "full"
+  ],
+  "construction": "correct at position B, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a13",
+  "type": "a",
+  "function": "is_prime",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "one",
+   "zero"
+  ],
+  "failed_details": [
+   "got True expected False",
+   "got True expected False"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a14",
+  "type": "a",
+  "function": "is_prime",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b13",
+  "type": "b",
+  "function": "is_prime",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "one",
+   "zero"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b14",
+  "type": "b",
+  "function": "is_prime",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "twentyfive",
+   "fortynine"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a15",
+  "type": "a",
+  "function": "sum_of_digits",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "negative"
+  ],
+  "failed_details": [
+   "raised ValueError: invalid literal for int() with base 10: '-' (expected value 6)"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a16",
+  "type": "a",
+  "function": "sum_of_digits",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b15",
+  "type": "b",
+  "function": "sum_of_digits",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "negative"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b16",
+  "type": "b",
+  "function": "sum_of_digits",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "basic",
+   "nines",
+   "negative",
+   "single",
+   "long"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a17",
+  "type": "a",
+  "function": "longest_common_prefix",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "flower",
+   "third-short"
+  ],
+  "failed_details": [
+   "got 'flow' expected 'fl'",
+   "got 'abc' expected 'ab'"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a18",
+  "type": "a",
+  "function": "longest_common_prefix",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b17",
+  "type": "b",
+  "function": "longest_common_prefix",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "flower",
+   "third-short"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b18",
+  "type": "b",
+  "function": "longest_common_prefix",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "flower",
+   "none"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a19",
+  "type": "a",
+  "function": "rotate_left",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "over"
+  ],
+  "failed_details": [
+   "got [1, 2, 3] expected [2, 3, 1]"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a20",
+  "type": "a",
+  "function": "rotate_left",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b19",
+  "type": "b",
+  "function": "rotate_left",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "over"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b20",
+  "type": "b",
+  "function": "rotate_left",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "basic",
+   "over"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a21",
+  "type": "a",
+  "function": "merge_dicts_sum",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "shared",
+   "mixed",
+   "cancel"
+  ],
+  "failed_details": [
+   "got {'x': 2} expected {'x': 3}",
+   "got {'a': 1, 'b': 3, 'c': 4} expected {'a': 1, 'b': 5, 'c': 4}",
+   "got {'x': 1} expected {'x': 0}"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a22",
+  "type": "a",
+  "function": "merge_dicts_sum",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b21",
+  "type": "b",
+  "function": "merge_dicts_sum",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "shared",
+   "mixed",
+   "cancel"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b22",
+  "type": "b",
+  "function": "merge_dicts_sum",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "mixed",
+   "left-empty",
+   "right-empty"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a23",
+  "type": "a",
+  "function": "unique_sorted",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "dups",
+   "all-same",
+   "neg"
+  ],
+  "failed_details": [
+   "got [1, 3, 3] expected [1, 3]",
+   "got [5, 5, 5] expected [5]",
+   "got [-1, 0, 2, 2] expected [-1, 0, 2]"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a24",
+  "type": "a",
+  "function": "unique_sorted",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b23",
+  "type": "b",
+  "function": "unique_sorted",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "dups",
+   "all-same",
+   "neg"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b24",
+  "type": "b",
+  "function": "unique_sorted",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "basic",
+   "dups",
+   "neg"
+  ],
+  "construction": "correct at position B, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a25",
+  "type": "a",
+  "function": "word_frequency",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "case"
+  ],
+  "failed_details": [
+   "got {'Hello': 1, 'hello': 1} expected {'hello': 2}"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a26",
+  "type": "a",
+  "function": "word_frequency",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b25",
+  "type": "b",
+  "function": "word_frequency",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "case"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b26",
+  "type": "b",
+  "function": "word_frequency",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "basic",
+   "case",
+   "repeat"
+  ],
+  "construction": "correct at position B, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a27",
+  "type": "a",
+  "function": "is_valid_isbn10",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "valid-x"
+  ],
+  "failed_details": [
+   "got False expected True"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a28",
+  "type": "a",
+  "function": "is_valid_isbn10",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b27",
+  "type": "b",
+  "function": "is_valid_isbn10",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "valid-x"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b28",
+  "type": "b",
+  "function": "is_valid_isbn10",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "valid",
+   "valid-x",
+   "all-digits-bad"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a29",
+  "type": "a",
+  "function": "base36_to_int",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "ten",
+   "z",
+   "cap-z",
+   "mixed",
+   "ff",
+   "hello"
+  ],
+  "failed_details": [
+   "got 10 expected 36",
+   "raised ValueError: invalid literal for int() with base 10: 'z' (expected value 35)",
+   "raised ValueError: invalid literal for int() with base 10: 'Z' (expected value 35)",
+   "raised ValueError: invalid literal for int() with base 10: '10a' (expected value 1306)",
+   "raised ValueError: invalid literal for int() with base 10: 'ff' (expected value 555)",
+   "raised ValueError: invalid literal for int() with base 10: 'hello' (expected value 29234652)"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a30",
+  "type": "a",
+  "function": "base36_to_int",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b29",
+  "type": "b",
+  "function": "base36_to_int",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "ten",
+   "z",
+   "cap-z",
+   "mixed",
+   "ff",
+   "hello"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b30",
+  "type": "b",
+  "function": "base36_to_int",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "pass",
+  "success": false,
+  "direction": "buggy-passes (ambiguous)",
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a31",
+  "type": "a",
+  "function": "pascal_row",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "row0",
+   "row1",
+   "row2",
+   "row3",
+   "row5"
+  ],
+  "failed_details": [
+   "got [] expected [1]",
+   "got [1] expected [1, 1]",
+   "got [1, 2] expected [1, 2, 1]",
+   "got [1, 3, 3] expected [1, 3, 3, 1]",
+   "got [1, 5, 10, 10, 5] expected [1, 5, 10, 10, 5, 1]"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a32",
+  "type": "a",
+  "function": "pascal_row",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b31",
+  "type": "b",
+  "function": "pascal_row",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "row0",
+   "row1",
+   "row2",
+   "row3",
+   "row5"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b32",
+  "type": "b",
+  "function": "pascal_row",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "row0",
+   "row1",
+   "row2",
+   "row3",
+   "row5"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a33",
+  "type": "a",
+  "function": "mode_smallest",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "tie",
+   "tie-rev",
+   "three-way"
+  ],
+  "failed_details": [
+   "got 3 expected 2",
+   "got 3 expected 2",
+   "got 2 expected 1"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a34",
+  "type": "a",
+  "function": "mode_smallest",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b33",
+  "type": "b",
+  "function": "mode_smallest",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "tie",
+   "tie-rev",
+   "three-way"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b34",
+  "type": "b",
+  "function": "mode_smallest",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "tie-rev"
+  ],
+  "construction": "correct at position B, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a35",
+  "type": "a",
+  "function": "collapse_whitespace",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "messy",
+   "tabs"
+  ],
+  "failed_details": [
+   "got 'hello  world' expected 'hello world'",
+   "got 'a\\tb\\nc' expected 'a b c'"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a36",
+  "type": "a",
+  "function": "collapse_whitespace",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b35",
+  "type": "b",
+  "function": "collapse_whitespace",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "messy",
+   "tabs"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b36",
+  "type": "b",
+  "function": "collapse_whitespace",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "messy",
+   "tabs",
+   "spaces-only"
+  ],
+  "construction": "correct at position B, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a37",
+  "type": "a",
+  "function": "running_total",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "basic",
+   "empty",
+   "single",
+   "neg",
+   "tens"
+  ],
+  "failed_details": [
+   "got [0, 1, 3, 6] expected [1, 3, 6]",
+   "got [0] expected []",
+   "got [0, 5] expected [5]",
+   "got [0, 1, 0, 1, 0] expected [1, 0, 1, 0]",
+   "got [0, 10, 30, 60] expected [10, 30, 60]"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a38",
+  "type": "a",
+  "function": "running_total",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b37",
+  "type": "b",
+  "function": "running_total",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "basic",
+   "empty",
+   "single",
+   "neg",
+   "tens"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b38",
+  "type": "b",
+  "function": "running_total",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "basic",
+   "single",
+   "neg",
+   "tens"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a39",
+  "type": "a",
+  "function": "primes_below",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "two",
+   "three",
+   "seven"
+  ],
+  "failed_details": [
+   "got [2] expected []",
+   "got [2, 3] expected [2]",
+   "got [2, 3, 5, 7] expected [2, 3, 5]"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a40",
+  "type": "a",
+  "function": "primes_below",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b39",
+  "type": "b",
+  "function": "primes_below",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "two",
+   "three",
+   "seven"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b40",
+  "type": "b",
+  "function": "primes_below",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "three",
+   "seven",
+   "ten",
+   "twenty"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a41",
+  "type": "a",
+  "function": "hex_to_rgb",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "red",
+   "blue",
+   "mixed"
+  ],
+  "failed_details": [
+   "got (0, 0, 255) expected [255, 0, 0]",
+   "got (255, 0, 0) expected [0, 0, 255]",
+   "got (86, 52, 18) expected [18, 52, 86]"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a42",
+  "type": "a",
+  "function": "hex_to_rgb",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b41",
+  "type": "b",
+  "function": "hex_to_rgb",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "red",
+   "blue",
+   "mixed"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b42",
+  "type": "b",
+  "function": "hex_to_rgb",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "short"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a43",
+  "type": "a",
+  "function": "letter_grade",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "a-edge",
+   "b-low",
+   "c-low",
+   "d-low"
+  ],
+  "failed_details": [
+   "got 'B' expected 'A'",
+   "got 'C' expected 'B'",
+   "got 'D' expected 'C'",
+   "got 'F' expected 'D'"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a44",
+  "type": "a",
+  "function": "letter_grade",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b43",
+  "type": "b",
+  "function": "letter_grade",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "a-edge",
+   "b-low",
+   "c-low",
+   "d-low"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b44",
+  "type": "b",
+  "function": "letter_grade",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "d-edge",
+   "d-low"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a45",
+  "type": "a",
+  "function": "dot_product",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "len-a-long",
+   "len-b-long"
+  ],
+  "failed_details": [
+   "returned 3 (expected raise ValueError)",
+   "returned 2 (expected raise ValueError)"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a46",
+  "type": "a",
+  "function": "dot_product",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b45",
+  "type": "b",
+  "function": "dot_product",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "len-a-long",
+   "len-b-long"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b46",
+  "type": "b",
+  "function": "dot_product",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "basic",
+   "single",
+   "neg",
+   "zeros"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a47",
+  "type": "a",
+  "function": "transpose_matrix",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "ragged1",
+   "ragged2"
+  ],
+  "failed_details": [
+   "returned [[1, 3]] (expected raise ValueError)",
+   "returned [[1, 2]] (expected raise ValueError)"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a48",
+  "type": "a",
+  "function": "transpose_matrix",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b47",
+  "type": "b",
+  "function": "transpose_matrix",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "ragged1",
+   "ragged2"
+  ],
+  "construction": "correct at position A, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b48",
+  "type": "b",
+  "function": "transpose_matrix",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "square",
+   "row",
+   "col"
+  ],
+  "construction": "correct at position B, other is buggy_b"
+ },
+ {
+  "decision_id": "cf-a49",
+  "type": "a",
+  "function": "initials",
+  "expected": "fail",
+  "outcome": "fail",
+  "success": true,
+  "direction": null,
+  "failed_tests": [
+   "two",
+   "messy",
+   "one-letter",
+   "one-word"
+  ],
+  "failed_details": [
+   "got 'jd' expected 'JD'",
+   "got 'mas' expected 'MAS'",
+   "got 'a' expected 'A'",
+   "got 'a' expected 'A'"
+  ],
+  "construction": "old=correct, new=buggy_a -> tests must FAIL"
+ },
+ {
+  "decision_id": "cf-a50",
+  "type": "a",
+  "function": "initials",
+  "expected": "pass",
+  "outcome": "pass",
+  "success": true,
+  "direction": null,
+  "failed_tests": [],
+  "failed_details": [],
+  "construction": "old=buggy_b, new=correct -> tests must PASS"
+ },
+ {
+  "decision_id": "cf-b49",
+  "type": "b",
+  "function": "initials",
+  "expected": "B",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "two",
+   "messy",
+   "one-letter",
+   "one-word"
+  ],
+  "construction": "correct at position B, other is buggy_a"
+ },
+ {
+  "decision_id": "cf-b50",
+  "type": "b",
+  "function": "initials",
+  "expected": "A",
+  "correct_outcome": "pass",
+  "buggy_outcome": "fail",
+  "success": true,
+  "direction": null,
+  "correct_failed_tests": [],
+  "buggy_failed_tests": [
+   "two",
+   "three",
+   "messy",
+   "one-word"
+  ],
+  "construction": "correct at position A, other is buggy_b"
+ }
+]

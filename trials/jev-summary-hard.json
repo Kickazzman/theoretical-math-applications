@@ -1,0 +1,250 @@
+{
+  "n": 40,
+  "fast_alone_accuracy_quicklook": 0.625,
+  "hammer_standalone_accuracy": 0.325,
+  "escalated_accuracy_full": 1.0,
+  "escalation_improvement_pp_full": 37.5,
+  "escalation_rate_full": 0.525,
+  "escalated_subset_fast_accuracy_full": 0.2857142857142857,
+  "escalated_accuracy_lean": 1.0,
+  "escalation_improvement_pp_lean": 37.5,
+  "escalation_rate_lean": 0.375,
+  "escalated_subset_fast_accuracy_lean": 0.0,
+  "agreement_rate_quicklook_hammer": 0.2,
+  "escalation_anatomy_full": {
+    "null_fast": 15,
+    "confidence_lt_0.8": 0,
+    "disagreement": 6,
+    "total_escalated": 21
+  },
+  "correction_full_ids": [],
+  "correction_lean_ids": [],
+  "corrected_by_neither_ids": [],
+  "confidence_distribution_quicklook": {
+    "<0.5": 0,
+    "0.5-0.6": 0,
+    "0.6-0.7": 0,
+    "0.7-0.8": 0,
+    "0.8-0.9": 0,
+    "0.9-1.0": 25,
+    "null": 15
+  },
+  "confidence_lt_0.95_count": 0,
+  "quicklook_prose_rate": 0.0,
+  "quicklook_think_rate": 0.0,
+  "quicklook_empty_rate": 0.375,
+  "quicklook_contract_failure_rate": 0.375,
+  "quicklook_bare_word_rate": 0.0,
+  "hammer_prose_rate": 1.0,
+  "hammer_think_rate": 0.0,
+  "hammer_empty_rate": 0.0,
+  "hammer_contract_failure_rate": 0.375,
+  "hammer_bare_word_rate": 0.375,
+  "buckets": {
+    "combined": [
+      {
+        "bucket": "0.5-0.6",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.6-0.7",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.7-0.8",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.8-0.9",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.9-1.0",
+        "k": 25,
+        "success": 25,
+        "rate": 1.0,
+        "wilson95": [
+          0.8668035060468213,
+          1.0
+        ]
+      },
+      {
+        "bucket": "<0.5",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      }
+    ],
+    "a": [
+      {
+        "bucket": "0.5-0.6",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.6-0.7",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.7-0.8",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.8-0.9",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.9-1.0",
+        "k": 12,
+        "success": 12,
+        "rate": 1.0,
+        "wilson95": [
+          0.7574992425007574,
+          1.0
+        ]
+      },
+      {
+        "bucket": "<0.5",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      }
+    ],
+    "b": [
+      {
+        "bucket": "0.5-0.6",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.6-0.7",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.7-0.8",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.8-0.9",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      },
+      {
+        "bucket": "0.9-1.0",
+        "k": 13,
+        "success": 13,
+        "rate": 1.0,
+        "wilson95": [
+          0.7718981569447083,
+          1.0
+        ]
+      },
+      {
+        "bucket": "<0.5",
+        "k": 0,
+        "success": 0,
+        "rate": null,
+        "wilson95": [
+          null,
+          null
+        ]
+      }
+    ]
+  },
+  "bucket_sequence_nonempty": [
+    [
+      "0.9-1.0",
+      1.0
+    ]
+  ],
+  "monotone": true,
+  "top_bucket": {
+    "bucket": "0.9-1.0",
+    "k": 25,
+    "success": 25,
+    "rate": 1.0,
+    "wilson95": [
+      0.8668035060468213,
+      1.0
+    ]
+  },
+  "gt_mismatches": [],
+  "ceiling_max_improvement_pp": 37.5
+}

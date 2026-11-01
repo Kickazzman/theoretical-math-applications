@@ -1,0 +1,38 @@
+{
+ "n_items": 100,
+ "n_failed": 1,
+ "p_fail": 0.01,
+ "wilson_95": [
+  0.0017673865655472639,
+  0.05448752476093461
+ ],
+ "reachability": 0.99,
+ "by_type": {
+  "a": {
+   "n": 50,
+   "failed": 0,
+   "p_fail": 0.0,
+   "wilson_95": [
+    0.0,
+    0.07135003417431873
+   ]
+  },
+  "b": {
+   "n": 50,
+   "failed": 1,
+   "p_fail": 0.02,
+   "wilson_95": [
+    0.0035391680889764613,
+    0.10495686471836953
+   ]
+  }
+ },
+ "by_direction": {
+  "buggy-passes (ambiguous)": 1
+ },
+ "by_function": {
+  "base36_to_int": 1
+ },
+ "marginal_correct_failed_items": 0,
+ "marginal_buggy_passed_items": 1
+}

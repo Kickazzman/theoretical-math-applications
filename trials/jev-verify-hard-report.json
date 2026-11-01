@@ -1,0 +1,530 @@
+{
+  "exponential_moving_average": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 7,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_alpha_one\", \"test_alpha_too_big\", \"test_alpha_zero\", \"test_basic\", \"test_empty\", \"test_initial\", \"test_single\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 4,
+      "failed": [
+        {
+          "test": "test_alpha_one",
+          "error": ""
+        },
+        {
+          "test": "test_basic",
+          "error": ""
+        },
+        {
+          "test": "test_single",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_alpha_too_big\", \"test_alpha_zero\", \"test_empty\", \"test_initial\"], \"failed\": [{\"test\": \"test_alpha_one\", \"error\": \"\"}, {\"test\": \"test_basic\", \"error\": \"\"}, {\"test\": \"test_single\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 4,
+      "failed": [
+        {
+          "test": "test_alpha_one",
+          "error": ""
+        },
+        {
+          "test": "test_basic",
+          "error": ""
+        },
+        {
+          "test": "test_initial",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_alpha_too_big\", \"test_alpha_zero\", \"test_empty\", \"test_single\"], \"failed\": [{\"test\": \"test_alpha_one\", \"error\": \"\"}, {\"test\": \"test_basic\", \"error\": \"\"}, {\"test\": \"test_initial\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "merge_sorted_lists": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 9,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_bad_key\", \"test_basic\", \"test_both_empty\", \"test_duplicates\", \"test_key\", \"test_left_empty\", \"test_not_lists\", \"test_right_empty\", \"test_stability\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 8,
+      "failed": [
+        {
+          "test": "test_stability",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_bad_key\", \"test_basic\", \"test_both_empty\", \"test_duplicates\", \"test_key\", \"test_left_empty\", \"test_not_lists\", \"test_right_empty\"], \"failed\": [{\"test\": \"test_stability\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 3,
+      "failed": [
+        {
+          "test": "test_basic",
+          "error": ""
+        },
+        {
+          "test": "test_duplicates",
+          "error": ""
+        },
+        {
+          "test": "test_key",
+          "error": ""
+        },
+        {
+          "test": "test_left_empty",
+          "error": ""
+        },
+        {
+          "test": "test_right_empty",
+          "error": ""
+        },
+        {
+          "test": "test_stability",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "st_both_empty\", \"test_not_lists\"], \"failed\": [{\"test\": \"test_basic\", \"error\": \"\"}, {\"test\": \"test_duplicates\", \"error\": \"\"}, {\"test\": \"test_key\", \"error\": \"\"}, {\"test\": \"test_left_empty\", \"error\": \"\"}, {\"test\": \"test_right_empty\", \"error\": \"\"}, {\"test\": \"test_stability\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "parse_duration": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 12,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_alpha\", \"test_bad_unit\", \"test_bare\", \"test_compound\", \"test_days\", \"test_empty\", \"test_fraction\", \"test_non_string\", \"test_seconds\", \"test_spaced_parts\", \"test_surrounding_space\", \"test_upper\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 7,
+      "failed": [
+        {
+          "test": "test_compound",
+          "error": ""
+        },
+        {
+          "test": "test_days",
+          "error": ""
+        },
+        {
+          "test": "test_seconds",
+          "error": ""
+        },
+        {
+          "test": "test_spaced_parts",
+          "error": ""
+        },
+        {
+          "test": "test_surrounding_space",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": ", \"test_empty\", \"test_fraction\", \"test_non_string\", \"test_upper\"], \"failed\": [{\"test\": \"test_compound\", \"error\": \"\"}, {\"test\": \"test_days\", \"error\": \"\"}, {\"test\": \"test_seconds\", \"error\": \"\"}, {\"test\": \"test_spaced_parts\", \"error\": \"\"}, {\"test\": \"test_surrounding_space\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 11,
+      "failed": [
+        {
+          "test": "test_bare",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_alpha\", \"test_bad_unit\", \"test_compound\", \"test_days\", \"test_empty\", \"test_fraction\", \"test_non_string\", \"test_seconds\", \"test_spaced_parts\", \"test_surrounding_space\", \"test_upper\"], \"failed\": [{\"test\": \"test_bare\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "weighted_quantile": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 12,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_boundary\", \"test_empty\", \"test_first_segment\", \"test_median\", \"test_mismatch\", \"test_negative_weight\", \"test_q_high\", \"test_q_low\", \"test_q_one\", \"test_q_zero\", \"test_weighted\", \"test_zero_total\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 9,
+      "failed": [
+        {
+          "test": "test_median",
+          "error": ""
+        },
+        {
+          "test": "test_q_one",
+          "error": ""
+        },
+        {
+          "test": "test_weighted",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": " [\"test_boundary\", \"test_empty\", \"test_first_segment\", \"test_mismatch\", \"test_negative_weight\", \"test_q_high\", \"test_q_low\", \"test_q_zero\", \"test_zero_total\"], \"failed\": [{\"test\": \"test_median\", \"error\": \"\"}, {\"test\": \"test_q_one\", \"error\": \"\"}, {\"test\": \"test_weighted\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 9,
+      "failed": [
+        {
+          "test": "test_first_segment",
+          "error": ""
+        },
+        {
+          "test": "test_median",
+          "error": ""
+        },
+        {
+          "test": "test_q_zero",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": " [\"test_boundary\", \"test_empty\", \"test_mismatch\", \"test_negative_weight\", \"test_q_high\", \"test_q_low\", \"test_q_one\", \"test_weighted\", \"test_zero_total\"], \"failed\": [{\"test\": \"test_first_segment\", \"error\": \"\"}, {\"test\": \"test_median\", \"error\": \"\"}, {\"test\": \"test_q_zero\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "sliding_window_max": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 10,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_classic\", \"test_decreasing\", \"test_empty\", \"test_increasing\", \"test_ties\", \"test_window_full\", \"test_window_non_int\", \"test_window_one\", \"test_window_too_large\", \"test_window_zero\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 7,
+      "failed": [
+        {
+          "test": "test_classic",
+          "error": ""
+        },
+        {
+          "test": "test_decreasing",
+          "error": ""
+        },
+        {
+          "test": "test_window_one",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_empty\", \"test_increasing\", \"test_ties\", \"test_window_full\", \"test_window_non_int\", \"test_window_too_large\", \"test_window_zero\"], \"failed\": [{\"test\": \"test_classic\", \"error\": \"\"}, {\"test\": \"test_decreasing\", \"error\": \"\"}, {\"test\": \"test_window_one\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 4,
+      "failed": [
+        {
+          "test": "test_classic",
+          "error": ""
+        },
+        {
+          "test": "test_decreasing",
+          "error": ""
+        },
+        {
+          "test": "test_increasing",
+          "error": ""
+        },
+        {
+          "test": "test_ties",
+          "error": ""
+        },
+        {
+          "test": "test_window_full",
+          "error": ""
+        },
+        {
+          "test": "test_window_one",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "o_large\", \"test_window_zero\"], \"failed\": [{\"test\": \"test_classic\", \"error\": \"\"}, {\"test\": \"test_decreasing\", \"error\": \"\"}, {\"test\": \"test_increasing\", \"error\": \"\"}, {\"test\": \"test_ties\", \"error\": \"\"}, {\"test\": \"test_window_full\", \"error\": \"\"}, {\"test\": \"test_window_one\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "levenshtein": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 10,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_empty_both\", \"test_empty_left\", \"test_empty_right\", \"test_flaw_lawn\", \"test_identical\", \"test_kitten_sitting\", \"test_non_string\", \"test_saturday_sunday\", \"test_single_char\", \"test_single_substitution\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 5,
+      "failed": [
+        {
+          "test": "test_flaw_lawn",
+          "error": ""
+        },
+        {
+          "test": "test_identical",
+          "error": ""
+        },
+        {
+          "test": "test_kitten_sitting",
+          "error": ""
+        },
+        {
+          "test": "test_saturday_sunday",
+          "error": ""
+        },
+        {
+          "test": "test_single_substitution",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "_right\", \"test_non_string\", \"test_single_char\"], \"failed\": [{\"test\": \"test_flaw_lawn\", \"error\": \"\"}, {\"test\": \"test_identical\", \"error\": \"\"}, {\"test\": \"test_kitten_sitting\", \"error\": \"\"}, {\"test\": \"test_saturday_sunday\", \"error\": \"\"}, {\"test\": \"test_single_substitution\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 4,
+      "failed": [
+        {
+          "test": "test_flaw_lawn",
+          "error": ""
+        },
+        {
+          "test": "test_identical",
+          "error": ""
+        },
+        {
+          "test": "test_kitten_sitting",
+          "error": ""
+        },
+        {
+          "test": "test_saturday_sunday",
+          "error": ""
+        },
+        {
+          "test": "test_single_char",
+          "error": ""
+        },
+        {
+          "test": "test_single_substitution",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "ng\"], \"failed\": [{\"test\": \"test_flaw_lawn\", \"error\": \"\"}, {\"test\": \"test_identical\", \"error\": \"\"}, {\"test\": \"test_kitten_sitting\", \"error\": \"\"}, {\"test\": \"test_saturday_sunday\", \"error\": \"\"}, {\"test\": \"test_single_char\", \"error\": \"\"}, {\"test\": \"test_single_substitution\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "interpolate_missing": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 8,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_all_none\", \"test_double_gap\", \"test_edges\", \"test_empty\", \"test_no_gaps\", \"test_single\", \"test_single_gap\", \"test_single_known\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 5,
+      "failed": [
+        {
+          "test": "test_double_gap",
+          "error": ""
+        },
+        {
+          "test": "test_edges",
+          "error": ""
+        },
+        {
+          "test": "test_single_gap",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_all_none\", \"test_empty\", \"test_no_gaps\", \"test_single\", \"test_single_known\"], \"failed\": [{\"test\": \"test_double_gap\", \"error\": \"\"}, {\"test\": \"test_edges\", \"error\": \"\"}, {\"test\": \"test_single_gap\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 7,
+      "failed": [
+        {
+          "test": "test_edges",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_all_none\", \"test_double_gap\", \"test_empty\", \"test_no_gaps\", \"test_single\", \"test_single_gap\", \"test_single_known\"], \"failed\": [{\"test\": \"test_edges\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "allocate_budget": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 11,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_basic\", \"test_empty\", \"test_equal_split\", \"test_exact\", \"test_fractional_total\", \"test_negative_amount\", \"test_negative_total\", \"test_tie_larger_amount\", \"test_zero_total\", \"test_zero_weight\", \"test_zero_weights\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 8,
+      "failed": [
+        {
+          "test": "test_basic",
+          "error": ""
+        },
+        {
+          "test": "test_equal_split",
+          "error": ""
+        },
+        {
+          "test": "test_tie_larger_amount",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "test_exact\", \"test_fractional_total\", \"test_negative_amount\", \"test_negative_total\", \"test_zero_total\", \"test_zero_weight\", \"test_zero_weights\"], \"failed\": [{\"test\": \"test_basic\", \"error\": \"\"}, {\"test\": \"test_equal_split\", \"error\": \"\"}, {\"test\": \"test_tie_larger_amount\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 10,
+      "failed": [
+        {
+          "test": "test_tie_larger_amount",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_basic\", \"test_empty\", \"test_equal_split\", \"test_exact\", \"test_fractional_total\", \"test_negative_amount\", \"test_negative_total\", \"test_zero_total\", \"test_zero_weight\", \"test_zero_weights\"], \"failed\": [{\"test\": \"test_tie_larger_amount\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "validate_ipv4_cidr": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 12,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_alpha_octet\", \"test_basic\", \"test_class_a\", \"test_leading_zero\", \"test_max\", \"test_no_prefix\", \"test_non_string\", \"test_octet_too_big\", \"test_prefix_too_big\", \"test_too_few_octets\", \"test_too_many_octets\", \"test_zero\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 11,
+      "failed": [],
+      "errors": [
+        {
+          "test": "test_max",
+          "error": "ValueError: octet out of range"
+        }
+      ],
+      "tail": "t_alpha_octet\", \"test_basic\", \"test_class_a\", \"test_leading_zero\", \"test_no_prefix\", \"test_non_string\", \"test_octet_too_big\", \"test_prefix_too_big\", \"test_too_few_octets\", \"test_too_many_octets\", \"test_zero\"], \"failed\": [], \"errors\": [{\"test\": \"test_max\", \"error\": \"ValueError: octet out of range\"}]}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 11,
+      "failed": [
+        {
+          "test": "test_leading_zero",
+          "error": "DID NOT RAISE <class 'ValueError'>"
+        }
+      ],
+      "errors": [],
+      "tail": "pha_octet\", \"test_basic\", \"test_class_a\", \"test_max\", \"test_no_prefix\", \"test_non_string\", \"test_octet_too_big\", \"test_prefix_too_big\", \"test_too_few_octets\", \"test_too_many_octets\", \"test_zero\"], \"failed\": [{\"test\": \"test_leading_zero\", \"error\": \"DID NOT RAISE <class 'ValueError'>\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  },
+  "moving_median": {
+    "present": true,
+    "correct": {
+      "harness_ok": true,
+      "passed": 9,
+      "failed": [],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_empty\", \"test_even_window\", \"test_negatives\", \"test_odd_window\", \"test_window_full\", \"test_window_non_int\", \"test_window_one\", \"test_window_too_large\", \"test_window_zero\"], \"failed\": [], \"errors\": []}"
+    },
+    "buggy_a": {
+      "harness_ok": true,
+      "passed": 4,
+      "failed": [
+        {
+          "test": "test_even_window",
+          "error": ""
+        },
+        {
+          "test": "test_negatives",
+          "error": ""
+        },
+        {
+          "test": "test_odd_window",
+          "error": ""
+        },
+        {
+          "test": "test_window_full",
+          "error": ""
+        },
+        {
+          "test": "test_window_one",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "_window_non_int\", \"test_window_too_large\", \"test_window_zero\"], \"failed\": [{\"test\": \"test_even_window\", \"error\": \"\"}, {\"test\": \"test_negatives\", \"error\": \"\"}, {\"test\": \"test_odd_window\", \"error\": \"\"}, {\"test\": \"test_window_full\", \"error\": \"\"}, {\"test\": \"test_window_one\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "buggy_b": {
+      "harness_ok": true,
+      "passed": 7,
+      "failed": [
+        {
+          "test": "test_even_window",
+          "error": ""
+        },
+        {
+          "test": "test_negatives",
+          "error": ""
+        }
+      ],
+      "errors": [],
+      "tail": "{\"passed\": [\"test_empty\", \"test_odd_window\", \"test_window_full\", \"test_window_non_int\", \"test_window_one\", \"test_window_too_large\", \"test_window_zero\"], \"failed\": [{\"test\": \"test_even_window\", \"error\": \"\"}, {\"test\": \"test_negatives\", \"error\": \"\"}], \"errors\": []}"
+    },
+    "AB_VALID": true,
+    "VALID": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "file": "/home/joshua/llm/wire-experiment/runs/bit-shared/20261012T000000Z.jsonl",
+  "seq": "a",
+  "tick_first": 19721318,
+  "tick_last": 19771317,
+  "window": 50000,
+  "density": 0.50058,
+  "bohr_freqs": [
+    0,
+    4,
+    13,
+    21,
+    23,
+    51,
+    81,
+    86
+  ],
+  "observed_aps": 78427129,
+  "null_mean": 78373260.78,
+  "null_sd": 194700.0087896033,
+  "null_min": 77862659,
+  "null_max": 78953116,
+  "z": 0.2766729202267776,
+  "p_ge": 0.33,
+  "shuffles": 100,
+  "seed": 20261031,
+  "method": "fft"
+}
